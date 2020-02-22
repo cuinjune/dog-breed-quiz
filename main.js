@@ -22,9 +22,8 @@ window.addEventListener('DOMContentLoaded', async () => {
     const imageUrlApiOptions = {method:"GET"};
     const imageUrlResponse = await fetch(imageUrl, imageUrlApiOptions);
     const imageJson = await imageUrlResponse.json();
-    const $img = document.createElement('img');
+    const $img = document.getElementById("dogImage");
     $img.src = imageJson.message;
-    document.body.appendChild($img);
 
     //get the breed of the dog in the photo
     const imageJsonMessage = imageJson.message;

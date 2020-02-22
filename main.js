@@ -1,4 +1,4 @@
-function shuffle(array) {
+function shuffle(array) { //shuffle array elements
   var currentIndex = array.length, temporaryValue, randomIndex;
 
   // While there remain elements to shuffle...
@@ -25,6 +25,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   const imageJson = await imageUrlResponse.json();
   const $img = document.getElementById("dogImage");
   $img.src = imageJson.message;
+  $img.height = 300;
 
   //get the breed of the dog in the photo
   const imageJsonMessage = imageJson.message;
@@ -48,32 +49,34 @@ window.addEventListener('DOMContentLoaded', async () => {
   console.log(breedList);
   const $breeds = document.getElementsByName("breed");
   const $breedLabels = document.getElementsByName("breed__label");
-
-  for (let i = 0; i < breedList.length; ++i)
-  {
+  for (let i = 0; i < breedList.length; ++i) {
     $breeds[i].value = breedList[i];
     $breedLabels[i].textContent = breedList[i];
   }
-    
+
   //breed button listener
   const $breedButton = document.querySelector(".breed__button");
   $breedButton.addEventListener('click', (out) => {
 
-    for (let i = 0; i < $breeds.length; ++i)
-    {
-      if ($breeds[i].checked)
+    for (let i = 0; i < $breeds.length; ++i) {
+      if ($breeds[i].checked) //correct
       {
-        if ($breeds[i].value == breedStr)
+        if ($breeds[i].value == breedStr) 
         {
-          console.log("CORRECT");
+          $breedLabels[i].style.color = "blue";
+          $breedLabels[i].textContent = $breeds[i].value + " (Correct)";
+          const delayInMilliseconds = 500;
+          setTimeout(function () {
+            location.reload();
+          }, delayInMilliseconds);
         }
-        else
+        else //wrong
         {
-          console.log("WRONG");
+          $breedLabels[i].style.color = "red";
+          $breedLabels[i].textContent = $breeds[i].value + " (Wrong)";
         }
         break;
       }
     }
   });
-
 });

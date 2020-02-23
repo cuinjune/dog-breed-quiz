@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   const imageJson = await imageUrlResponse.json();
   const $img = document.getElementById("dogImage");
   $img.src = imageJson.message;
-  $img.height = 300;
+  $img.height = 320;
 
   //get the breed of the dog in the photo
   const imageJsonMessage = imageJson.message;

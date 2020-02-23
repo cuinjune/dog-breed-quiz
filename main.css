@@ -40,6 +40,20 @@ body{
 .row2 {
     width: 100%;
     height: 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+.row2__col1 {
+    width: calc(100% / 3);
+}
+
+.row2__col2 {
+    width: calc(100% / 3);
+}
+
+.row2__col3 {
+    width: calc(100% / 3);
 }
 
 .row3 {

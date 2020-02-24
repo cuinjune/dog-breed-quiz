@@ -31,7 +31,6 @@ window.addEventListener('DOMContentLoaded', async () => {
   const imageJsonMessage = imageJson.message;
   const lastSlashIndex = imageJsonMessage.lastIndexOf('/');
   const breedStr = imageJsonMessage.slice(30, lastSlashIndex);
-  console.log(breedStr);
 
   //get the full list of breeds
   const breedUrl = "https://dog.ceo/api/breeds/list/all";
@@ -43,10 +42,14 @@ window.addEventListener('DOMContentLoaded', async () => {
   //make selectable list of breeds
   shuffle(breedList);
   const numOptions = 3;
+  while (breedList.indexOf(breedStr) < 3)
+  {
+      shuffle(breedList);
+  }
+
   breedList.length = numOptions - 1;
   breedList.push(breedStr);
   shuffle(breedList);
-  console.log(breedList);
   const $breeds = document.getElementsByName("breed");
   const $breedLabels = document.getElementsByName("breed__label");
   for (let i = 0; i < breedList.length; ++i) {

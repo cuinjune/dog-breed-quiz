@@ -15,8 +15,8 @@ I started with drawing a rough sketch to determine how the contents should be pl
 ### Sketch
 <img src="Sketch.png" alt="Sketch" width="500"/>
 
-### Wire Frame
-<img src="wireframe.png" alt="Wire Frame" width="500"/>
+### Wireframe
+<img src="Wireframe.png" alt="Wire Frame" width="500"/>
 
 ### Visual Design
 <img src="Visual Design.png" alt="Visual Design" width="500"/>

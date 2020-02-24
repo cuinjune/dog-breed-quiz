@@ -1,4 +1,6 @@
 # Dog Breed Quiz
+<img src="Screenshot.png" alt="Screenshot" width="1000"/>
+
 This is the week 3 assignment for the ITP class Dynamic Web Development.<br />
 This week, the assignment was to created a dynamic front end web application. This means that it must:
 
@@ -12,7 +14,7 @@ Here's the [Live Demo on Glitch](https://cuinjune-dog-breed-quiz.glitch.me/)
 
 ## Design
 I started with drawing a rough sketch to determine how the contents should be placed and then I used [Figma](https://www.figma.com/file/4tPv71U0E7AkBKHCRknwd4/Dog-Breed-Quiz?node-id=0%3A1) to create wireframe, visual design, and style guide. 
-<img src="Figma.png" alt="figma" width="1000"/>
+<img src="Figma.png" alt="Figma" width="1000"/>
 
 ### Sketch
 <img src="Sketch.png" alt="Sketch" width="500"/>

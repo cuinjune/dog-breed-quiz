@@ -1,6 +1,5 @@
 # Dog Breed Quiz
 <img src="Screenshot.png" alt="Screenshot" width="1000"/>
-
 This is the week 3 assignment for the ITP class Dynamic Web Development.<br />
 This week, the assignment was to created a dynamic front end web application. This means that it must:
 

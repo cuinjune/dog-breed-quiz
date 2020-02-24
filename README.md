@@ -40,7 +40,7 @@ I tried to make the page responsive to the page size by changing the flex-direct
 ```
 But it didn't seem to work properly for some reason. I need to ask and learn how to fix this.
 
-<img src="Wrong.png" alt="Wrong" width="500"/>
+<img src="Wrong.png" alt="Wrong" width="300"/>
 
 ## Author
 * [Zack Lee](https://www.cuinjune.com/about): an MPS Candidate at [NYU ITP](https://itp.nyu.edu)

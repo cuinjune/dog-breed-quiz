@@ -6,6 +6,8 @@ This week, the assignment was to created a dynamic front end web application. Th
 * Include an interactive element that responds to an event (e.g. click, scroll, mouseover, etc.)
 * Be responsive to the screen size
 
+I decided to create a simple educational quiz app to test the user's knowledge in dog breed.
+
 [Live Demo on Glitch](https://cuinjune-dog-breed-quiz.glitch.me/)
 
 ## Design

@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   const numOptions = 3;
   //Q: why sometimes breedList.indexOf(breedStr) returns -1?
   while (breedList.indexOf(breedStr) >= 0 && 
-         breedList.indexOf(breedStr) < numOptions)
+         breedList.indexOf(breedStr) < numOptions - 1)
   {
       shuffle(breedList);
   }

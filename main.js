@@ -42,7 +42,9 @@ window.addEventListener('DOMContentLoaded', async () => {
   //make selectable list of breeds
   shuffle(breedList);
   const numOptions = 3;
-  while (breedList.indexOf(breedStr) < 3)
+  //Q: why sometimes breedList.indexOf(breedStr) returns -1?
+  while (breedList.indexOf(breedStr) >= 0 && 
+         breedList.indexOf(breedStr) < numOptions)
   {
       shuffle(breedList);
   }

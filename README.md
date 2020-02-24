@@ -27,7 +27,7 @@ I started with drawing a rough sketch to determine how the contents should be pl
 ## Building the Website
 I structured the HTML page with flex boxes that are essentially made of rows and columns and based on the wireframe sketch.
 
-<img src="Debug.png" alt="Debug" width="500"/>
+<img src="Debug.png" alt="Debug" width="1000"/>
 
 I tried to make the page responsive to the page size by changing the flex-direction.
 
@@ -40,6 +40,7 @@ I tried to make the page responsive to the page size by changing the flex-direct
 ```
 But it didn't seem to work properly for some reason. I need to ask and learn how to fix this.
 
+<img src="Wrong.png" alt="Wrong" width="500"/>
 
 ## Author
 * [Zack Lee](https://www.cuinjune.com/about): an MPS Candidate at [NYU ITP](https://itp.nyu.edu)
